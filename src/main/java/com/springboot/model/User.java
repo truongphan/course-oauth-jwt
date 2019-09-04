@@ -17,7 +17,7 @@ public class User {
 
     private Long id;
     @NotNull
-    private String name;
+    private String username;
     @NotNull
     private String email;
     private String imageUrl;
@@ -26,6 +26,8 @@ public class User {
     @NotNull
     @JsonIgnore
     private String password;
+
+    @NotNull
     private AuthProvider provider;
     private String providerId;
 }

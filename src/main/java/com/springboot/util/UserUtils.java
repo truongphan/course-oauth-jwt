@@ -8,7 +8,7 @@ public class UserUtils {
 
 	public static User toUserModel(UserEntity entity) {
 		return User.builder().id(entity.getId())
-				.name(entity.getName())
+				.username(entity.getUsername())
 				.email(entity.getEmail())
 				.emailVerified(entity.getEmailVerified())
 				.provider(entity.getProvider())
@@ -20,7 +20,7 @@ public class UserUtils {
 
 	public static UserEntity toUserEntity(User model) {
 		return UserEntity.builder()
-				.name(model.getName())
+				.username(model.getUsername())
 				.email(model.getEmail())
 				.emailVerified(model.getEmailVerified())
 				.provider(model.getProvider())
