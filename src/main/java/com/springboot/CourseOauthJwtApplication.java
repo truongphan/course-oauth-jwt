@@ -9,16 +9,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CourseOauthJwtApplication {
+public class CourseOauthJwtApplication implements CommandLineRunner{
 
-    /*@Autowired
-    private UserService userService;*/
+    @Autowired
+    private UserService userService;
 
     public static void main(String[] args) {
         SpringApplication.run(CourseOauthJwtApplication.class, args);
     }
 
-    /*@Override
+    @Override
     public void run(String... args) throws Exception {
         User user = User.builder()
                 .username("truongphan")
@@ -28,5 +28,5 @@ public class CourseOauthJwtApplication {
                 .emailVerified(true)
                 .build();
         userService.createUser(user);
-    }*/
+    }
 }
