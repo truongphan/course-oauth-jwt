@@ -1,8 +1,5 @@
 package com.springboot.model;
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.codehaus.jackson.annotate.JsonIgnore;
 
 import javax.persistence.*;
@@ -13,6 +10,8 @@ import javax.validation.constraints.NotNull;
 @Setter
 @Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
     private Long id;

@@ -1,24 +1,19 @@
 package com.springboot;
 
-import com.springboot.model.AuthProvider;
-import com.springboot.model.User;
-import com.springboot.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CourseOauthJwtApplication implements CommandLineRunner{
+public class CourseOauthJwtApplication {
 
-    @Autowired
-    private UserService userService;
+    /*@Autowired
+    private UserService userService;*/
 
     public static void main(String[] args) {
         SpringApplication.run(CourseOauthJwtApplication.class, args);
     }
 
-    @Override
+    /*@Override
     public void run(String... args) throws Exception {
         User user = User.builder()
                 .username("truongphan")
@@ -28,5 +23,5 @@ public class CourseOauthJwtApplication implements CommandLineRunner{
                 .emailVerified(true)
                 .build();
         userService.createUser(user);
-    }
+    }*/
 }

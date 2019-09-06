@@ -61,7 +61,7 @@ public class JwtService {
         return null;
     }
 
-    private String generateToken(CustomUserDetails userDetails) {
+    public String generateToken(CustomUserDetails userDetails) {
         // Get user info
         Date now = new Date();
         Date expiryDate = new Date(now.getTime() + JWT_EXPIRATION);
